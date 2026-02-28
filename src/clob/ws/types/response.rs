@@ -522,7 +522,7 @@ pub fn parse_if_interested(
                 }
 
                 serde_json::from_value(elem.clone())
-                    .inspect_err(|err| {
+                    .inspect_err(|_err| {
                         #[cfg(feature = "tracing")]
                         warn!(
                             event_type = %event_type,
