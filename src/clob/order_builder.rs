@@ -22,13 +22,6 @@ pub(crate) const USDC_DECIMALS: u32 = 6;
 /// Maximum decimal places for size (lot size) - always 2 for Polymarket
 pub(crate) const LOT_SIZE_SCALE: u32 = 2;
 
-/// Maximum decimal places for maker_amount in FOK (Fill-or-Kill) market orders
-/// Per Polymarket API: "the market buy orders maker amount supports a max accuracy of 2 decimals"
-pub(crate) const FOK_MAKER_AMOUNT_DECIMALS: u32 = 2;
-
-/// Maximum decimal places for taker_amount in FOK (Fill-or-Kill) market orders
-pub(crate) const FOK_TAKER_AMOUNT_DECIMALS: u32 = 4;
-
 /// Placeholder type for compile-time checks on limit order builders
 #[non_exhaustive]
 #[derive(Debug)]
